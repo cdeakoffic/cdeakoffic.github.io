@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甜蜜惩罚动漫-热门恋爱番剧推荐与剧情深度解析</title>
+    <meta name="description" content="甜蜜惩罚动漫专题站，为你推荐高甜恋爱番剧，深度解析甜蜜惩罚剧情、角色与结局，提供在线观看指南与同类作品推荐。">
+    <meta name="keywords" content="甜蜜惩罚,甜蜜惩罚动漫,甜蜜惩罚剧情,恋爱番剧,高甜动漫推荐,甜蜜惩罚结局,甜蜜惩罚角色">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+            background-color: #fff5f7;
+            color: #3d2b2f;
+            line-height: 1.7;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 顶部装饰条 */
+        .top-strip {
+            height: 4px;
+            background: linear-gradient(90deg, #ff7eb3, #ff758c, #ffb199);
+        }
+
+        /* 页眉 */
+        .site-header {
+            background: #ffffff;
+            box-shadow: 0 2px 12px rgba(255, 118, 136, 0.12);
+            padding: 18px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            font-size: 32px;
+            line-height: 1;
+        }
+        .logo-text {
+            font-size: 28px;
+            font-weight: 800;
+            color: #e0486e;
+            letter-spacing: 1px;
+        }
+        .logo-text span {
+            font-weight: 300;
+            color: #999;
+            font-size: 16px;
+            margin-left: 6px;
+        }
+        .main-nav ul {
+            display: flex;
+            gap: 32px;
+        }
+        .main-nav a {
+            font-size: 15px;
+            font-weight: 500;
+            color: #5a4148;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+        }
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: #e0486e;
+            border-bottom-color: #e0486e;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: #f7eef0;
+            border-radius: 30px;
+            padding: 6px 16px;
+            border: 1px solid #f0d9de;
+        }
+        .search-box input {
+            border: none;
+            background: transparent;
+            outline: none;
+            font-size: 14px;
+            width: 160px;
+            color: #3d2b2f;
+        }
+        .search-box button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            color: #e0486e;
+        }
+
+        /* 移动端导航 */
+        .nav-toggle {
+            display: none;
+            font-size: 24px;
+            background: none;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 2px 12px;
+            cursor: pointer;
+            color: #e0486e;
+        }
+
+        /* 主视觉 Hero */
+        .hero {
+            background: linear-gradient(135deg, #ffe0e9 0%, #fff0f3 50%, #ffd6e0 100%);
+            border-radius: 0 0 60px 60px / 20px;
+            padding: 60px 0 70px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255,255,255,0.6) 0%, transparent 70%);
+            top: -80px;
+            right: -60px;
+            border-radius: 50%;
+        }
+        .hero-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .hero-text {
+            flex: 1 1 500px;
+        }
+        .hero-text .tagline {
+            display: inline-block;
+            background: #ffffff;
+            color: #e0486e;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 4px 16px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(224, 72, 110, 0.1);
+        }
+        .hero-text h1 {
+            font-size: 40px;
+            font-weight: 800;
+            color: #3d2b2f;
+            line-height: 1.3;
+            margin-bottom: 18px;
+        }
+        .hero-text h1 .highlight {
+            color: #e0486e;
+            position: relative;
+        }
+        .hero-text p {
+            font-size: 16px;
+            color: #6b4a52;
+            max-width: 560px;
+            margin-bottom: 30px;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+        .btn-primary {
+            background: #e0486e;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 15px;
+            display: inline-block;
+            box-shadow: 0 6px 16px rgba(224, 72, 110, 0.3);
+            transition: 0.2s;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(224, 72, 110, 0.35);
+        }
+        .btn-outline {
+            border: 2px solid #e0486e;
+            color: #e0486e;
+            padding: 10px 28px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: 0.2s;
+        }
+        .btn-outline:hover {
+            background: #e0486e;
+            color: white;
+        }
+        .hero-art {
+            flex: 0 0 260px;
+            text-align: center;
+        }
+        .hero-art .emoji-big {
+            font-size: 140px;
+            line-height: 1;
+            filter: drop-shadow(0 10px 20px rgba(224, 72, 110, 0.2));
+        }
+        .hero-art .art-caption {
+            font-size: 14px;
+            color: #a06b76;
+            margin-top: 8px;
+            font-weight: 500;
+        }
+
+        /* 信息卡片 */
+        .quick-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .info-card {
+            background: white;
+            border-radius: 18px;
+            padding: 22px 20px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+            border-left: 4px solid #ff8ba7;
+            transition: 0.2s;
+        }
+        .info-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(224, 72, 110, 0.12);
+        }
+        .info-card .card-icon {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .info-card h3 {
+            font-size: 17px;
+            margin-bottom: 6px;
+            color: #3d2b2f;
+        }
+        .info-card p {
+            font-size: 14px;
+            color: #7a5a62;
+        }
+
+        /* 章节标题 */
+        .section-title {
+            text-align: center;
+            margin: 55px 0 30px;
+        }
+        .section-title h2 {
+            font-size: 30px;
+            font-weight: 800;
+            color: #3d2b2f;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #ff7eb3, #e0486e);
+            border-radius: 4px;
+        }
+        .section-title .sub {
+            color: #a06b76;
+            font-size: 15px;
+            margin-top: 8px;
+        }
+
+        /* 剧情介绍 */
+        .story-section {
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+        }
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .story-text p {
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+        .story-text .dropcap::first-letter {
+            font-size: 40px;
+            font-weight: 800;
+            color: #e0486e;
+            float: left;
+            line-height: 1;
+            margin-right: 6px;
+        }
+        .story-facts {
+            background: #fff7f9;
+            border-radius: 20px;
+            padding: 24px;
+            border: 1px solid #ffe4ea;
+        }
+        .story-facts h3 {
+            font-size: 18px;
+            margin-bottom: 16px;
+            color: #e0486e;
+        }
+        .fact-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px dashed #f0cdd6;
+            font-size: 14px;
+        }
+        .fact-item:last-child {
+            border-bottom: none;
+        }
+        .fact-item .label {
+            color: #8a6a72;
+        }
+        .fact-item .value {
+            font-weight: 600;
+            color: #3d2b2f;
+        }
+
+        /* 角色卡片 */
+        .characters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 24px;
+            margin-top: 20px;
+        }
+        .char-card {
+            background: white;
+            border-radius: 22px;
+            padding: 30px 20px 24px;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+            transition: 0.2s;
+            border: 1px solid #fff0f3;
+        }
+        .char-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(224, 72, 110, 0.12);
+        }
+        .char-avatar {
+            font-size: 60px;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .char-card h3 {
+            font-size: 20px;
+            color: #3d2b2f;
+            margin-bottom: 6px;
+        }
+        .char-role {
+            display: inline-block;
+            background: #ffe4ea;
+            color: #e0486e;
+            font-size: 12px;
+            padding: 2px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .char-card p {
+            font-size: 14px;
+            color: #7a5a62;
+            line-height: 1.6;
+        }
+
+        /* 推荐番剧 */
+        .recommend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .anime-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+            transition: 0.2s;
+        }
+        .anime-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 24px rgba(224, 72, 110, 0.12);
+        }
+        .anime-cover {
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 56px;
+            background: linear-gradient(135deg, #ffe4ea, #fff5f7);
+        }
+        .anime-info {
+            padding: 16px 18px 20px;
+        }
+        .anime-info h3 {
+            font-size: 17px;
+            margin-bottom: 6px;
+        }
+        .anime-info .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 8px;
+        }
+        .anime-info .tags span {
+            background: #fdf0f2;
+            color: #d95a7a;
+            font-size: 12px;
+            padding: 2px 10px;
+            border-radius: 20px;
+        }
+        .anime-info p {
+            font-size: 13px;
+            color: #8a6a72;
+        }
+
+        /* 观看指南 */
+        .watch-guide {
+            background: linear-gradient(120deg, #fff0f3, #ffe4ea);
+            border-radius: 30px;
+            padding: 40px;
+            margin: 40px 0;
+        }
+        .guide-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin-top: 24px;
+        }
+        .step-item {
+            background: white;
+            border-radius: 20px;
+            padding: 24px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+        }
+        .step-num {
+            display: inline-flex;
+            width: 36px;
+            height: 36px;
+            background: #e0486e;
+            color: white;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .step-item h4 {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .step-item p {
+            font-size: 14px;
+            color: #7a5a62;
+        }
+
+        /* 常见问题 FAQ */
+        .faq-section {
+            margin: 50px 0;
+        }
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: white;
+            border-radius: 16px;
+            margin-bottom: 14px;
+            padding: 20px 24px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+            border-left: 4px solid #ffb3c6;
+        }
+        .faq-item details {
+            cursor: pointer;
+        }
+        .faq-item summary {
+            font-weight: 600;
+            font-size: 16px;
+            color: #3d2b2f;
+            outline: none;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq-item summary::after {
+            content: "+";
+            font-size: 22px;
+            color: #e0486e;
+            transition: 0.2s;
+        }
+        .faq-item details[open] summary::after {
+            content: "−";
+        }
+        .faq-item .answer {
+            margin-top: 12px;
+            font-size: 15px;
+            color: #6b4a52;
+            padding-top: 12px;
+            border-top: 1px solid #f7eef0;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            background: #3d2b2f;
+            color: #e8d5da;
+            padding: 40px 0 20px;
+            margin-top: 60px;
+            border-radius: 40px 40px 0 0;
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-col h4 {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+        .footer-col ul li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .footer-col ul li a {
+            color: #d4b8bf;
+            transition: 0.2s;
+        }
+        .footer-col ul li a:hover {
+            color: #ffb3c6;
+        }
+        .footer-bottom {
+            border-top: 1px solid #5a4148;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #bda0a8;
+        }
+
+        /* 响应式 */
+        @media (max-width: 900px) {
+            .main-nav {
+                display: none;
+                width: 100%;
+                padding-top: 16px;
+            }
+            .main-nav ul {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .nav-toggle {
+                display: block;
+            }
+            .main-nav.open {
+                display: block;
+            }
+            .hero-text h1 {
+                font-size: 32px;
+            }
+            .hero-art {
+                flex-basis: 100%;
+                text-align: center;
+            }
+            .story-grid {
+                grid-template-columns: 1fr;
+            }
+            .search-box {
+                display: none;
+            }
+        }
+        @media (max-width: 600px) {
+            .header-inner {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .logo-text {
+                font-size: 22px;
+            }
+            .hero {
+                padding: 40px 0 50px;
+            }
+            .section-title h2 {
+                font-size: 24px;
+            }
+            .story-section,
+            .watch-guide {
+                padding: 24px;
+            }
+            .hero-art .emoji-big {
+                font-size: 90px;
+            }
+        }
+    </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+    <div class="top-strip"></div>
+    
+    <!-- 页眉 -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo-area">
+                <span class="logo-icon">🍬</span>
+                <span class="logo-text">甜蜜惩罚<span>动漫站</span></span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#story">剧情介绍</a></li>
+                    <li><a href="#characters">角色图鉴</a></li>
+                    <li><a href="#recommend">相似推荐</a></li>
+                    <li><a href="#guide">观看指南</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索番剧...">
+                <button>🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主视觉 -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="tagline">💖 高甜恋爱 · 心动预警</span>
+                <h1>探索<span class="highlight">甜蜜惩罚</span><br>的恋爱世界</h1>
+                <p>一部让人脸红心跳的恋爱动漫，交织着甜蜜与纠结的情感故事。这里为你准备了最全面的剧情解析、角色介绍与观看指南，带你走进这场甜蜜又充满波折的恋爱旅程。</p>
+                <div class="hero-buttons">
+                    <a href="#story" class="btn-primary">开始了解剧情</a>
+                    <a href="#recommend" class="btn-outline">发现更多好番</a>
+                </div>
+            </div>
+            <div class="hero-art">
+                <span class="emoji-big">💘</span>
+                <div class="art-caption">甜蜜与纠结并存</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 快速信息 -->
+    <div class="container">
+        <div class="quick-info">
+            <div class="info-card">
+                <div class="card-icon">📺</div>
+                <h3>作品类型</h3>
+                <p>恋爱 · 校园 · 少女向</p>
+            </div>
+            <div class="info-card">
+                <div class="card-icon">⭐</div>
+                <h3>人气指数</h3>
+                <p>同类型中热度较高</p>
+            </div>
+            <div class="info-card">
+                <div class="card-icon">🎬</div>
+                <h3>动画制作</h3>
+                <p>日系恋爱番画风</p>
+            </div>
+            <div class="info-card">
+                <div class="card-icon">💝</div>
+                <h3>核心看点</h3>
+                <p>甜蜜互动 · 情感纠葛</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 剧情介绍 -->
+    <div class="container">
+        <section class="story-section" id="story">
+            <div class="section-title">
+                <h2>📖 剧情深度解析</h2>
+                <p class="sub">走进甜蜜惩罚的世界</p>
+            </div>
+            <div class="story-grid">
+                <div class="story-text">
+                    <p class="dropcap">《甜蜜惩罚》讲述了一段充满波折却又无比甜蜜的恋爱故事。女主角在机缘巧合下与性格迥异的男主角们相遇，从此生活发生了翻天覆地的变化。故事中既有令人心动的甜蜜互动，也有让人揪心的情感考验。</p>
+                    <p>作品巧妙地运用了“惩罚”与“甜蜜”这对看似矛盾的概念，将恋爱中的酸甜苦辣展现得淋漓尽致。每一次看似惩罚的互动背后，都隐藏着角色们不善于表达的真实情感。</p>
+                    <p>整部动漫在轻松愉快的氛围中，也不乏对爱情、友情与成长的思考。无论是初次接触恋爱番的观众，还是资深动漫迷，都能从中找到属于自己的那份感动。</p>
+                </div>
+                <div class="story-facts">
+                    <h3>📋 作品档案</h3>
+                    <div class="fact-item"><span class="label">作品名称</span><span class="value">甜蜜惩罚</span></div>
+                    <div class="fact-item"><span class="label">题材类型</span><span class="value">恋爱 / 校园 / 少女</span></div>
+                    <div class="fact-item"><span class="label">主要角色</span><span class="value">女主 & 多位男主</span></div>
+                    <div class="fact-item"><span class="label">情感基调</span><span class="value">甜蜜 + 微虐</span></div>
+                    <div class="fact-item"><span class="label">适合观众</span><span class="value">恋爱番爱好者</span></div>
+                    <div class="fact-item"><span class="label">观看建议</span><span class="value">请勿在公共场合尖叫</span></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 角色介绍 -->
+    <div class="container">
+        <section id="characters">
+            <div class="section-title">
+                <h2>👥 主要角色图鉴</h2>
+                <p class="sub">了解故事中的心动主角们</p>
+            </div>
+            <div class="characters-grid">
+                <div class="char-card">
+                    <span class="char-avatar">👩</span>
+                    <h3>女主角</h3>
+                    <span class="char-role">核心人物</span>
+                    <p>性格温柔却带着自己的坚持，在突如其来的感情漩涡中逐渐成长。她的每一次选择，都牵动着故事的发展。</p>
+                </div>
+                <div class="char-card">
+                    <span class="char-avatar">😏</span>
+                    <h3>男主角 · 冷酷型</h3>
+                    <span class="char-role">高冷担当</span>
+                    <p>表面看似冷漠疏离，实则内心细腻敏感。与女主的相遇，让他冰封的内心开始慢慢融化。</p>
+                </div>
+                <div class="char-card">
+                    <span class="char-avatar">😊</span>
+                    <h3>男主角 · 温柔型</h3>
+                    <span class="char-role">治愈担当</span>
+                    <p>总是带着温暖的笑容守护在女主身边。他的温柔与体贴，是故事中最治愈的存在。</p>
+                </div>
+                <div class="char-card">
+                    <span class="char-avatar">😜</span>
+                    <h3>男主角 · 腹黑型</h3>
+                    <span class="char-role">神秘担当</span>
+                    <p>看似玩世不恭，却总在关键时刻展现出意想不到的一面。他的出现，让故事多了更多变数。</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 相似番剧推荐 -->
+    <div class="container">
+        <section id="recommend">
+            <div class="section-title">
+                <h2>🎀 如果你喜欢这部作品</h2>
+                <p class="sub">这些高甜恋爱番或许也能打动你</p>
+            </div>
+            <div class="recommend-grid">
+                <div class="anime-card">
+                    <div class="anime-cover">🌸</div>
+                    <div class="anime-info">
+                        <h3>狼少女与黑王子</h3>
+                        <div class="tags"><span>校园</span><span>恋爱</span><span>反差</span></div>
+                        <p>表面高冷的男主，私下却有着不为人知的一面。与女主的互动甜中带刺，却又让人欲罢不能。</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <div class="anime-cover">🍓</div>
+                    <div class="anime-info">
+                        <h3>邻座的怪同学</h3>
+                        <div class="tags"><span>校园</span><span>搞笑</span><span>纯爱</span></div>
+                        <p>学霸女主与问题少年之间的化学反应，充满了轻松愉快的甜蜜互动。</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <div class="anime-cover">💎</div>
+                    <div class="anime-info">
+                        <h3>来自风平浪静的明天</h3>
+                        <div class="tags"><span>奇幻</span><span>恋爱</span><span>催泪</span></div>
+                        <p>复杂的情感关系与精美的画面，讲述了一段跨越时间与空间的恋爱故事。</p>
+                    </div>
+                </div>
+                <div class="anime-card">
+                    <div class="anime-cover">🌙</div>
+                    <div class="anime-info">
+                        <h3>月色真美</h3>
+                        <div class="tags"><span>纯爱</span><span>写实</span><span>治愈</span></div>
+                        <p>初中生之间青涩而纯粹的恋爱，真实到让人回忆起自己的青春时光。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 观看指南 -->
+    <div class="container">
+        <section class="watch-guide" id="guide">
+            <div class="section-title">
+                <h2>🎬 观看指南</h2>
+                <p class="sub">开启你的甜蜜追番之旅</p>
+            </div>
+            <div class="guide-steps">
+                <div class="step-item">
+                    <span class="step-num">1</span>
+                    <h4>选择平台</h4>
+                    <p>可在各大正版视频平台搜索“甜蜜惩罚”，注意确认片源清晰度与字幕质量。</p>
+                </div>
+                <div class="step-item">
+                    <span class="step-num">2</span>
+                    <h4>观看顺序</h4>
+                    <p>建议按照动画的集数顺序观看，避免错过剧情中的关键情感铺垫。</p>
+                </div>
+                <div class="step-item">
+                    <span class="step-num">3</span>
+                    <h4>观剧心态</h4>
+                    <p>准备好迎接心动与纠结并存的情节。建议备好零食，享受这份甜蜜。</p>
+                </div>
+                <div class="step-item">
+                    <span class="step-num">4</span>
+                    <h4>分享交流</h4>
+                    <p>看完后可以与同好一起讨论剧情走向，分享你的心动瞬间。</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 常见问题 -->
+    <div class="container">
+        <section class="faq-section" id="faq">
+            <div class="section-title">
+                <h2>❓ 常见问题</h2>
+                <p class="sub">关于甜蜜惩罚，你可能想知道</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <details>
+                        <summary>《甜蜜惩罚》是什么类型的动漫？</summary>
+                        <div class="answer">这是一部以恋爱为核心主题的动漫作品，融合了校园、少女等元素。故事围绕着女主角与多位男主角之间的情感互动展开，既有甜蜜温馨的日常，也有充满波折的情感发展。</div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>这部动漫适合什么年龄段的观众？</summary>
+                        <div class="answer">作品整体风格偏向少女漫，适合喜欢恋爱题材的青少年及以上观众观看。由于包含一些情感纠葛的情节，建议年龄较小的观众在家长陪同下观看。</div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>在哪里可以看到这部动漫？</summary>
+                        <div class="answer">可以在主流的正版视频平台进行搜索。不同平台的片源可能有所不同，建议选择画质清晰、翻译准确的版本观看。同时注意保护视力，合理安排观看时间。</div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>这部动漫的结局是甜蜜还是虐心的？</summary>
+                        <div class="answer">关于结局的具体走向，这里不做过多剧透。可以说的是，整个故事就像它的名字一样，在“甜蜜”与“惩罚”之间反复横跳，最终会有一个让人感慨的收尾。建议亲自去感受。</div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>看完动画后意犹未尽，还有什么推荐？</summary>
+                        <div class="answer">如果你喜欢这种风格的恋爱番，可以在本页的“相似推荐”部分找到一些同类型的优秀作品。此外，也可以关注原作漫画或小说，通常会有动画没有呈现的更多细节。</div>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <h4>🍬 甜蜜惩罚动漫站</h4>
+                    <ul>
+                        <li>专注恋爱番剧推荐与分享</li>
+                        <li>为每一个热爱动漫的你</li>
+                        <li>提供温暖的追番角落</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#story">剧情介绍</a></li>
+                        <li><a href="#characters">角色图鉴</a></li>
+                        <li><a href="#recommend">番剧推荐</a></li>
+                        <li><a href="#faq">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>友情提示</h4>
+                    <ul>
+                        <li>支持正版，快乐追番</li>
+                        <li>理性讨论，友善交流</li>
+                        <li>注意休息，保护视力</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 甜蜜惩罚动漫爱好者专题页 · 本页面为粉丝交流展示用途 · 请支持正版动画</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端导航切换
+        document.getElementById('navToggle').addEventListener('click', function() {
+            var nav = document.getElementById('mainNav');
+            nav.classList.toggle('open');
+        });
+
+        // 平滑滚动到锚点
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
+                var targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                var target = document.querySelector(targetId);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    // 关闭移动端菜单
+                    document.getElementById('mainNav').classList.remove('open');
+                }
+            });
+        });
+    </script>
+</body>
+                                                                                         </html>
